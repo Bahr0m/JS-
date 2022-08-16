@@ -48,13 +48,13 @@ console.log(cashOf);
 
 
 let cashAll=0;
-for(let i=0;i<persons.length;i++){
-    if(persons[i].value=="USD"){
-        persons[i].cash*=10.20;
-        cashAll+=persons[i].cash;
+for(let j=0;j<persons.length;j++){
+    if(persons[j].value=="USD"){
+        persons[j].cash*=10.20;
+        cashAll+=persons[j].cash;
+        persons[j].value="TJS";
+        continue;
     }
-    else{
-        cashAll+=persons[i].cash;
-    }
+        cashAll+=persons[j].cash;
 }
-console.log(cashAll);
+console.log(cashAll.toFixed(2));
