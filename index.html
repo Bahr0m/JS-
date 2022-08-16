@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .light{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .input{
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .btn{
+            border: none;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-size: 2em;
+        }
+        .square{
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color:red;
+        }
+    </style>
 </head>
 <body>
-    <script src="./object.js">
+    <div class="light">
+        <button class="btn minus">-</button>
+        <div class="input"></div>
+        <button class="btn plus">+</button>
+    </div>
+    <div class="square"></div>
+    <script src="./Dom.js">
     </script>
 </body>
 </html>
