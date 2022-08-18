@@ -5,7 +5,7 @@ let square = document.querySelector(".square");
 let input = document.querySelector(".input");
 let num = 1;
 input.innerHTML=num;
-let changeColor=()=>{
+let changeColor = () => {
 if(num>3&&num<=6){
     square.style.backgroundColor="yellow";
 }else if(num>6&&num<=9){
@@ -14,7 +14,7 @@ if(num>3&&num<=6){
     square.style.backgroundColor="red";
 }
 }
-minus.onclick=()=>{
+minus.onclick = () => {
     if(num>1){
         num--
         input.innerHTML=num;
@@ -22,7 +22,7 @@ minus.onclick=()=>{
     }
     
 };
-plus.onclick=()=>{
+plus.onclick = () => {
     if(num<9){
     num++
     input.innerHTML=num;
